@@ -1,0 +1,185 @@
+*{
+    transition: all;
+}
+body{
+    background-color: var(--mainColor);
+}
+:root{
+    --mainColor:#3A1078;
+    --secondColor:#69589f;
+    --light:#F7F7F8;
+    --enterTask:#4E31AA;
+    --enterTaskHolder: #e1e1e1;
+}
+.lightMode{
+    --mainColor:#F7F7F8;
+    --secondColor:#dfdfdf;
+    --light: #3A1078; 
+    --enterTask:#e1e1e1;
+    --enterTaskHolder:#4e1fe9 ; 
+}
+.toDoApp{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:0 10px;
+    margin-top:10px ;
+    height: 100%;
+}
+.toDoApp .headingTodo{
+    border: 2px solid var(--secondColor);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.toDoApp .headingTodo .text h3{
+  color: var(--light);
+}
+.toDoApp .headingTodo .text h6{
+  color: var(--light);
+  font-size: 12px;
+}
+.btnn{
+    width: 150px;
+    height: 40px;
+    margin: 10px ;
+    background-color: var(--light);
+    border: none;
+    border-radius: 5px;
+    color: var(--mainColor);
+    font-weight: 600;
+}
+.toDoApp .headingTodo .pendingTask {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+ background-color: #4E31AA;
+ color: #F7F7F8;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.toDoApp .headingTodo .counter {
+    width: 70px;
+    height: 70px;
+    background-color: #3795BD;
+    border-radius: 50%;
+    color:#F7F7F8;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.toDoApp .headingTodo .counter .finshTask,
+.toDoApp .headingTodo .counter .numberTask{
+  margin: 4px;
+}
+.addTask .inputAndicon{
+    padding-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.enterTask::placeholder{
+    color: var(--enterTaskHolder);
+    font-size: 14px;
+    font-weight: 500;
+}
+.addTask .enterTask{
+    width: 80%; 
+    background-color: var(--enterTask);
+    border: 2px solid var(--secondColor);
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--light);
+}
+.addTask .enterTaskError{
+    border: 1px solid #ff0000;
+}
+.addTask .fa-solid.fa-plus{
+    width: 55px;
+    height: 55px;
+    background-color: #3795BD;
+    border-radius: 50%;
+    color:#F7F7F8 ;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#error,
+#error2{
+    color: #ff0000;
+}
+.allTask{
+    margin-top: 20px;
+    height: 300px;
+    overflow: auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+.fa-solid.fa-trash{
+    color: #ee7c26;
+    cursor: pointer;
+}
+.allTask .div{
+    background-color: var(--enterTask);
+    padding: 10px;
+    color: var(--light);
+    font-size: 15px;
+    border-radius: 5px;
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.bodyTask #emptyTask{
+    color: red;
+}
+
+.checked{
+    background-color: rgba(164, 164, 164, 0.085) !important;
+    color: #c8c8c8 !important; 
+   
+}
+.conforme{
+   background-color: var(--mainColor);
+   padding: 10px;
+   box-shadow: 0 0 10px var(--enterTask);
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   color: #ff0000;
+   z-index: 999;
+}
+.btns button{
+    width: 100px;
+    padding: 6px;
+    font-weight: 500;
+    border-radius: 8px;
+    background-color: var(--light);
+    border: none;
+    color: var(--mainColor);
+}
+.none{
+    display: none;
+}
+@media (max-width:991px) {
+    .conforme h3{
+       font-size: 20px;
+    }
+    .toDoApp{
+        margin-top:80px ;
+    }
+}

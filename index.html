@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/icon/all.min.css" />
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="toDoApp">
+      <div class="conforme none">
+        <h3>You really want to delete all tasks !</h3>
+        <div class="btns">
+          <button id="yes">Yes</button>
+          <button id="no">No</button>
+        </div>
+
+      </div>
+      <div>
+        <button class="btnn">Light Mode</button>
+      </div>
+      <div class="headingTodo">
+        <div class="text">
+          <h3>Todo App.</h3>
+          <h6>Keep it up!</h6>
+          <p class="pendingTask">0</p>
+          <!-- <div class="loadEndTask"><span class="enterColor"></span></div> -->
+        </div>
+        <div class="counter">
+          <span class="finshTask">0</span> / <span class="numberTask">0</span>
+        </div>
+      </div>
+      <div class="addTask">
+        <div class="inputAndicon">
+          <input
+            type="text"
+            id="taskInput"
+            class="enterTask"
+            placeholder="Write your task"
+          />
+          <i id="addTaskBtn" class="fa-solid fa-plus"></i>
+        </div>
+        <p id="error" class="none">انت عبييت ! هل انت عبيت؟</p>
+        <p id="error2" class="none">The text must be greater than three and less than twenty.</p>
+      </div>
+      <div class="bodyTask">
+        <div class="d-grid mx-auto my-2 w-50">
+          <button class="deleteAll btn btn-danger none">Delete All</button>
+        </div>
+        <div id="emptyTask" class="alert alert-danger my-2">
+          <span>Empty Task !</span>
+        </div>
+        <div class="allTask"></div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
