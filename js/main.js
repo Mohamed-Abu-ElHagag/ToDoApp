@@ -38,6 +38,7 @@ let addTask = () => {
       if (!(InputValue.length < 3 || InputValue.value > 20)) {
         taskInput.classList.remove("enterTaskError");
         error.classList.add("none");
+        error2.classList.add("none");
         emptyTask.classList.add("none");
         deleteAll.classList.remove("none");
         // checkEmptyTask();
